@@ -1,0 +1,19 @@
+header{
+    height: auto;
+}
+main{
+    width: 100%;
+    /* height: auto; */
+}
+
+.mainoceanresult{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.mainoceanresult .oceanresult{
+    display: flex;
+}
+.oceanresult canvas{
+    justify-items: center;
+}

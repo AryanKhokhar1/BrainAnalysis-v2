@@ -1,0 +1,29 @@
+
+header{
+    height: 100vh;
+    align-items: center;
+}
+.questionmaincontainer{
+    font-size: 1.5em;
+}
+/* .question{
+    width: 100%;
+    text-align: center;
+}
+.question label{
+    font-size: 2em;
+} */
+
+.question label{
+    font-size: 1.75em;
+}
+.options{
+    margin: 1em 0;
+}
+p{
+    
+}
+
+.btnSubmit{
+    float: right;
+}

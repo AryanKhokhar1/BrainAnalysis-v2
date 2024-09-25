@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Result
+{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'result.css' %}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+{% endblock css %}
+
+{% block header %}
+{{ocean}}
+{% endblock header %}
+{% block main %}
+
+<div class="welcomemsg">
+    <h3>Welcome, </h3>{% if User.is_authenticated %}
+    <h3>User.username</h3>
+    {% endif %}
+</div>
+<div class="mainoceanresult">
+    <div class="oceanresult">
+        <div class="oceanchart">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="ocenaexplain">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis cum saepe atque animi eius repellat eligendi at tempora, dolorem est labore, vel totam nostrum repudiandae illo. Veritatis ut nihil tempora amet quaerat, fugiat reiciendis molestiae expedita consequuntur? Incidunt dolorum sed consequuntur labore. Optio corrupti omnis mollitia eaque amet distinctio dolores assumenda quos soluta harum labore culpa unde eum ea accusamus perferendis, repellat ab natus placeat iste architecto voluptatibus provident vitae magni. Sed ipsam blanditiis veniam qui quisquam esse sit, minus minima non doloribus fuga, eos adipisci libero doloremque eius? Illo itaque voluptatum expedita dolorem magnam praesentium! Autem doloremque distinctio voluptatibus unde quia, nobis iure natus facere quam amet eveniet aut ducimus. Et est harum fugiat similique? Harum omnis repellat ratione? Eum animi et non quae similique, eos voluptas, necessitatibus, molestias amet voluptate eaque. Odit porro sit illo deleniti amet ea, adipisci animi numquam et quam aliquid odio, fuga aperiam ex!
+        </div>
+    </div>
+
+    <div class="Openness">
+        <h2>Openness</h2>
+        <div class="ochart"></div>
+            <canvas id="oChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="oexplain">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam dolore aspernatur, molestiae necessitatibus temporibus nihil asperiores sequi laudantium modi quos nulla quibusdam minus nisi id fuga quas odio pariatur adipisci debitis delectus beatae maiores repellendus repudiandae! Inventore excepturi deserunt beatae ex natus debitis aut possimus hic commodi placeat dolores reiciendis nihil consectetur sint nulla repellat, necessitatibus ut, blanditiis a totam repellendus. Recusandae ullam amet ipsum odit asperiores autem ducimus natus? Voluptas libero consequuntur deserunt, culpa optio tempore laborum sapiente eos et hic temporibus possimus quos minus ducimus iste? Officia debitis saepe quis deserunt blanditiis suscipit voluptatem quisquam voluptates nobis!</p>
+            <div class="facet1">
+                <h3>Imagination</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet2">
+                <h3>Artistic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet3">
+                <h3>Emotionality:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet4">
+                <h3>Adventuresness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet5">
+                <h3>Intellect</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet6">
+                <h3>Liberalism</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <script>
+    const oceanvalue = {{ocean}}
+    const o = {{o}}
+</script> 
+<script src="{% static 'js/result.js' %}"></script>
+    
+{% endblock main %}

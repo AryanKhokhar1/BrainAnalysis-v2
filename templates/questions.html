@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Personality test{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/questions.css' %}">
+{% endblock css %}
+
+{% block header %}
+    <div class="questionmaincontainer">
+        <div class="questioncontainer">
+            <form action="{% url 'test' %}" method="POST">
+                {% csrf_token %}
+                {{question_number}} / 10
+                <div class="question">
+                    <label for="question">{{data.question_text}}</label>
+                </div>
+                <div class="options">
+                    <div class="option" style = "cursor: pointer;"><input type="radio" name="option" id="sa" value = 5> Strongly Agree <br></div>
+                    <div class="option" style="cursor: pointer;"><input type="radio" name="option" id="a" value = 4> Agree 
+                    <br></div>
+                    <div class="option" style="cursor: pointer;"><input type="radio" name="option" id="n" value = 3> Neutral <br></div>
+                    <div class="option" style="cursor: pointer;"><input type="radio" name="option" id="d" value = 2> Disagree <br></div>
+                    <div class="option" style="cursor: pointer;"><input type="radio" name="option" id="sd" value = 1> Strongly Disagree <br></div>
+                </div>
+                {% if question_number > 1 %}
+                    <a href="{% url 'prevques' %}"><button type="button" class="btn btn-primary">Prev</button></a>
+                {% endif %}
+
+                {% if question_number < 10 %}
+                <button type="submit" class="btn btn-primary" id="next">Next</button>
+                {% else %}
+                <button type="submit" class="btn btn-primary btnSubmit">Submit</button>
+                {% endif %}
+            </form>
+            <p style="color: red; font-size: 0.8em;">*{{ instruction }}</p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="{% static 'js/questions.js' %}"></script> 
+{% endblock header %}

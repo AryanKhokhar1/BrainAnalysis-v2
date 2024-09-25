@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}BrainAnalysis{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock css %}
+
+    {% block header %}
+    <img src="{% static 'img/pexels-codioful-6984991.jpg' %}" class="img-fluid custom-backgroud-img" alt="backgroud image">
+    <div class="custom-container">
+        <h2>BrainAnalysis</h2>
+        <p>Unveil the real you, backed by science and data.<br> Personalized insights for a smarter, better
+            tomorrow.</p>
+            
+                {% if user.is_authenticated %}
+
+                 {% comment %} {{ user.is_authenticated }}
+                 {{ user.username}} {% endcomment %}
+                 <a href="{% url 'test' %}"><button type="button" class="btn btn-outline-light btn-lg" >Start Test</button></a>
+                 {% else %}
+                 <a href="{% url 'login' %}"><button type="button" class="btn btn-outline-light btn-lg" >Login</button></a>
+                {% endif %}
+            
+    </div>
+    {% endblock header %}
+    {% block main %}
+    <div class="customthebig5">
+        <h2>The Big 5 (OCEAN) traits</h2>
+        <div class="customcontainerthebig5">
+            <div class="customthebig5img">
+                    <img src="{% static 'img/2795422-article-the-big-five-personality-dimensions-5a9083fb6edd650036603137.png' %}" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="customthebig5about">
+                    The <b>Big Five OCEAN</b> personality traits provide a comprehensive way to understand
+                    yourself:<br><br>
+                    <ul>
+                        <li><b>Openness</b> Reflects a person's creativity, curiosity, and openness to new experiences. High scorers enjoy exploring novel ideas, while low scorers prefer routine and familiarity.</li>
+                        <li><b>Conscientiousness</b> Indicates organization, responsibility, and dependability. Those with high conscientiousness are disciplined, goal-oriented, and thorough, while low scorers tend to be more spontaneous and less structured.</li>
+                        <li><b>Extraversion</b> Measures sociability, energy, and assertiveness. Extraverts thrive in social settings and are energetic, while introverts may be more reserved and prefer solitude.</li>
+                        <li><b>Agreeableness</b>Captures kindness, empathy, and cooperation. High scorers are compassionate and helpful, while lower scorers may be more competitive or assertive.</li>
+                        <li><b>Neuroticism</b> Reflects emotional stability. Higher levels indicate a tendency towards anxiety and mood swings, while lower levels show calmness and resilience under stress.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="customcontainerdiagram">
+            <p>We use <b>clustering algorithms</b> to group similar personality traits and behaviors based on your responses, helping us understand your personality in a deeper, data-driven way. By analyzing patterns in your answers, clustering identifies common characteristics shared with others who have similar traits. This allows us to categorize personality profiles, offering insights that go beyond individual traits. For instance, someone with high Openness and low Neuroticism may be grouped with creative and emotionally stable individuals. Clustering helps deliver more personalized and accurate personality insights, improving the overall assessment process.</p>
+            <img src="{% static 'img/4-Spider-Diagrams-for-O-C-E-A-N-Big-Five-traits-The-percentage-of-Males-M-and.png' %}" alt="" class="img-fluid">
+        </div>
+        
+        
+        {% endblock main %}
