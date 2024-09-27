@@ -3,17 +3,17 @@ header{
 }
 main{
     width: 100%;
-    /* height: auto; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .mainoceanresult{
     width: 80%;
-    display: flex;
-    justify-content: center;
 }
-.mainoceanresult .oceanresult{
+
+.oceanresult .oceanchart, .Openness .ochart{
     display: flex;
-}
-.oceanresult canvas{
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
 }

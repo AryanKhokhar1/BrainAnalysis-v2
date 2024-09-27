@@ -4,7 +4,7 @@
 Result
 {% endblock title %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'result.css' %}">
+<link rel="stylesheet" href="{% static 'css/result.css' %}">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 {% endblock css %}
 
@@ -28,9 +28,10 @@ Result
         </div>
     </div>
 
-    <div class="Openness">
+    <!-- Openness -->
+    <div class="openness">
         <h2>Openness</h2>
-        <div class="ochart"></div>
+        <div class="ochart">
             <canvas id="oChart" style="width:100%;max-width:600px"></canvas>
         </div>
         <div class="oexplain">
@@ -61,12 +62,158 @@ Result
             </div>
         </div>
     </div>
+    <hr>
+
+    <!-- Conscientiousness -->
+    <div class="Conscientiousness"></div>
+        <h2>Conscientiousness</h2>
+        <div class="cchart">
+            <canvas id="cChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="cexplain">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam dolore aspernatur, molestiae necessitatibus temporibus nihil asperiores sequi laudantium modi quos nulla quibusdam minus nisi id fuga quas odio pariatur adipisci debitis delectus beatae maiores repellendus repudiandae! Inventore excepturi deserunt beatae ex natus debitis aut possimus hic commodi placeat dolores reiciendis nihil consectetur sint nulla repellat, necessitatibus ut, blanditiis a totam repellendus. Recusandae ullam amet ipsum odit asperiores autem ducimus natus? Voluptas libero consequuntur deserunt, culpa optio tempore laborum sapiente eos et hic temporibus possimus quos minus ducimus iste? Officia debitis saepe quis deserunt blanditiis suscipit voluptatem quisquam voluptates nobis!</p>
+            <div class="facet1">
+                <h3>Self-Efficacy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet2">
+                <h3>Orderliness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet3">
+                <h3>Dutifulness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet4">
+                <h3>Achievement-Striving</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet5">
+                <h3>Self-Discipline</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet6">
+                <h3>Catiousness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extraversion -->
+    <div class="extraversion"></div>
+        <h2>Extraversion</h2>
+        <div class="echart">
+            <canvas id="eChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="eexplain">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam dolore aspernatur, molestiae necessitatibus temporibus nihil asperiores sequi laudantium modi quos nulla quibusdam minus nisi id fuga quas odio pariatur adipisci debitis delectus beatae maiores repellendus repudiandae! Inventore excepturi deserunt beatae ex natus debitis aut possimus hic commodi placeat dolores reiciendis nihil consectetur sint nulla repellat, necessitatibus ut, blanditiis a totam repellendus. Recusandae ullam amet ipsum odit asperiores autem ducimus natus? Voluptas libero consequuntur deserunt, culpa optio tempore laborum sapiente eos et hic temporibus possimus quos minus ducimus iste? Officia debitis saepe quis deserunt blanditiis suscipit voluptatem quisquam voluptates nobis!</p>
+            <div class="facet1">
+                <h3>Friendliness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet2">
+                <h3>Gregariousness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet3">
+                <h3>Assertiveness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet4">
+                <h3>Activity Level</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet5">
+                <h3>Excitement-Seeking</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet6">
+                <h3>Cheerfulness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agreeableness -->
+    <div class="agreeableness"></div>
+        <h2>Agreeableness</h2>
+        <div class="achart">
+            <canvas id="aChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="aexplain">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam dolore aspernatur, molestiae necessitatibus temporibus nihil asperiores sequi laudantium modi quos nulla quibusdam minus nisi id fuga quas odio pariatur adipisci debitis delectus beatae maiores repellendus repudiandae! Inventore excepturi deserunt beatae ex natus debitis aut possimus hic commodi placeat dolores reiciendis nihil consectetur sint nulla repellat, necessitatibus ut, blanditiis a totam repellendus. Recusandae ullam amet ipsum odit asperiores autem ducimus natus? Voluptas libero consequuntur deserunt, culpa optio tempore laborum sapiente eos et hic temporibus possimus quos minus ducimus iste? Officia debitis saepe quis deserunt blanditiis suscipit voluptatem quisquam voluptates nobis!</p>
+            <div class="facet1">
+                <h3>Trust</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet2">
+                <h3>Morality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet3">
+                <h3>Altruism</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet4">
+                <h3>Cooperation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet5">
+                <h3>Modesty</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet6">
+                <h3>Sympathy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="neuroticism"></div>
+        <h2>Neuroticism</h2>
+        <div class="nchart">
+            <canvas id="nChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="nexplain">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam dolore aspernatur, molestiae necessitatibus temporibus nihil asperiores sequi laudantium modi quos nulla quibusdam minus nisi id fuga quas odio pariatur adipisci debitis delectus beatae maiores repellendus repudiandae! Inventore excepturi deserunt beatae ex natus debitis aut possimus hic commodi placeat dolores reiciendis nihil consectetur sint nulla repellat, necessitatibus ut, blanditiis a totam repellendus. Recusandae ullam amet ipsum odit asperiores autem ducimus natus? Voluptas libero consequuntur deserunt, culpa optio tempore laborum sapiente eos et hic temporibus possimus quos minus ducimus iste? Officia debitis saepe quis deserunt blanditiis suscipit voluptatem quisquam voluptates nobis!</p>
+            <div class="facet1">
+                <h3>Anxiety</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet2">
+                <h3>Anger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet3">
+                <h3>Depression</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet4">
+                <h3>Self-Consiousness</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet5">
+                <h3>Immoderation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi mmdebitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+            <div class="facet6">
+                <h3>Vulnerability</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus blanditiis nesciunt est corrupti cumque at quas magni a repudiandae tempora voluptatibus hic perspiciatis culpa, optio tempore id repellendus enim assumenda quisquam nihil fugit qui? Molestiae doloribus, eaque perferendis rem tenetur voluptates illo est aliquam cum quibusdam sunt quasi ipsa autem sed reiciendis numquam magnam, veritatis, fuga ducimus voluptatem corporis eligendi debitis natus? Sunt impedit exercitationem tempora quos quas voluptates obcaecati aliquam distinctio porro libero, veritatis autem labore eligendi minus numquam nesciunt facilis fugit hic eum dolores ipsam! Nihil aliquid voluptates assumenda enim minima nisi obcaecati soluta sapiente dolorum. Minus.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 
  <script>
-    const oceanvalue = {{ocean}}
-    const o = {{o}}
+    const oceanvalue = {{ocean}};
+    const o = {{o}};
+    const c = {{c}};
+    const e = {{e}};
+    const a = {{a}};
+    const n = {{n}};
 </script> 
 <script src="{% static 'js/result.js' %}"></script>
     
