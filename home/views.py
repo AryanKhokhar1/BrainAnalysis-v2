@@ -81,7 +81,7 @@ def test(request):
         # get_data(request)
 
         if 'option' in request.POST:
-            if(request.session['n'] < 10):
+            if(request.session['n'] < 120):
                 request.session['n'] += 1
                 # request.session['p'] = 1
                 data = Question.objects.filter(question_number = request.session['n']).values('question_text').first() #1
