@@ -10,7 +10,7 @@
         <div class="questioncontainer">
             <form action="{% url 'test' %}" method="POST">
                 {% csrf_token %}
-                {{question_number}} / 10
+                {{question_number}} / 120
                 <div class="question">
                     <label for="question">{{data.question_text}}</label>
                 </div>
@@ -26,7 +26,7 @@
                     <a href="{% url 'prevques' %}"><button type="button" class="btn btn-primary">Prev</button></a>
                 {% endif %}
 
-                {% if question_number < 10 %}
+                {% if question_number < 120 %}
                 <button type="submit" class="btn btn-primary" id="next">Next</button>
                 {% else %}
                 <button type="submit" class="btn btn-primary btnSubmit">Submit</button>

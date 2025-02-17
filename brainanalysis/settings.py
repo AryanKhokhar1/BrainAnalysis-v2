@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--u++*amelo-n@1(9n1c37c_+am!x@)^301!42qe+kc+i&f9de2
 DEBUG = True
 
 # '192.168.222.55'
-ALLOWED_HOSTS = ['192.168.31.206']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'bootstrap',
 ]
 
 MIDDLEWARE = [
@@ -137,4 +136,10 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 
 
-LOGOUT_REDIRECT_URL = ''
+LOGOUT_REDIRECT_URL = 'logout/'
+
+# TAILWIND_APP_NAME = 'theme'
+
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
